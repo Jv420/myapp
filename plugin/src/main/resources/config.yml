@@ -1,0 +1,14 @@
+license:
+  key: "PASTE-YOUR-LICENSE-KEY-HERE"
+  product: "dynathistore"
+  validation-url: "http://localhost:5050/api/licenses/validate"
+  fail-closed: true
+
+server:
+  id: ""
+  public-address: "play.example.com"
+
+messages:
+  prefix: "&8[&6DynathiStore&8] &7"
+  license-valid: "&aLicentie is geldig."
+  license-invalid: "&cLicentie is ongeldig: %reason%"
