@@ -1,0 +1,15 @@
+name: DynathiStore
+version: 0.1.0
+main: nl.dynathi.store.DynathiStorePlugin
+api-version: '1.21'
+author: Jochem Visser
+description: Automatic webshop delivery plugin with license validation.
+commands:
+  dynathistore:
+    description: DynathiStore management command
+    usage: /dynathistore <status|reload>
+    permission: dynathistore.admin
+permissions:
+  dynathistore.admin:
+    description: Allows management of DynathiStore
+    default: op
