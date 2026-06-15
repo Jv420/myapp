@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DynathiStore</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <strong>DynathiStore</strong>
+      <a href="#shop">Webshop</a>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">Minecraft Webshop</p>
+      <h1>Koop ranks, keys en bundels</h1>
+      <p>Vul je exacte Minecraft-naam in. Na een geslaagde betaling levert de server je aankoop automatisch.</p>
+      <a class="button secondary" href="#shop">Bekijk producten</a>
+    </div>
+  </header>
+
+  <main id="shop" class="container">
+    <section class="checkout-panel">
+      <div>
+        <p class="eyebrow">Stap 1</p>
+        <h2>Jouw Minecraft-naam</h2>
+        <input id="player" maxlength="16" placeholder="Bijvoorbeeld Dynathi" autocomplete="off">
+        <small>Gebruik hoofdletters en tekens precies zoals in Minecraft.</small>
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">Stap 2</p>
+      <h2>Kies een product</h2>
+      <div id="products" class="products"></div>
+      <p id="message" class="message" role="status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Veilig betalen via Stripe met iDEAL of kaart.</p>
+  </footer>
+
+  <script src="/public/app.js" defer></script>
+</body>
+</html>
